@@ -69,7 +69,7 @@ export default function Hero() {
       </p>
 
       <p className="mt-2 text-sm md:text-base text-gray-500 italic">
-        Sydney, Australia • Open to Full-Time Roles
+        Australia • Open to Full-Time Roles
       </p>
 
       <div className="mt-7 flex gap-4 justify-center">
