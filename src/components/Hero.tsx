@@ -10,7 +10,7 @@ export default function Hero() {
 
   if (!mounted) return null;
 
-  const resumePath = "/projects/Resume_Kapil_Yadav_FullStack_Engineer.pdf";
+  const resumePath = "/projects/Resume_Kapil_Yadav_Fullstack_Engineer.pdf";
 
   const scrollTo = (id: string) => {
     const element = document.querySelector(id);
@@ -81,7 +81,7 @@ export default function Hero() {
   </button>
 
   <a
-    href="/projects/Kapil_Yadav_FullStack_Engineer.pdf"
+    href="/projects/Kapil_Yadav_Fullstack_Engineer.pdf"
     onClick={handleDownload}
     className="order-2 w-40 md:w-48 flex items-center justify-center cursor-pointer px-5 py-2 md:px-6 md:py-3 border border-gray-600 hover:border-purple-500 hover:text-purple-300 hover:bg-purple-600/10 transition rounded-lg text-sm md:text-base"
   >
