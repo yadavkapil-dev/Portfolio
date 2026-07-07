@@ -3,37 +3,57 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   const skills = {
+    Languages: [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "SQL",
+    ],
     Frontend: [
       "React.js",
       "Next.js",
-      "TypeScript",
-      "JavaScript",
-      "TailwindCSS",
-      "Material-UI",
+      "Vite",
+      "Tailwind CSS",
+      "Material UI",
+      "Bootstrap",
     ],
-    Backend: ["Node.js", "Express", "REST APIs", "JWT Auth"],
-    "CMS & PHP": ["WordPress Custom Plugins", "PHP"],
-    Databases: ["MongoDB", "Mongoose", "SQL"],
-    "DevOps & Cloud": [
+    Backend: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "JWT Authentication",
+      "Socket.IO",
+      "OpenAI API",
+    ],
+    Databases: [
+      "MongoDB",
+      "Mongoose",
+      "MySQL",
+      "SQL Fundamentals",
+      "Backup & Recovery",
+    ],
+    "AI & Automation": [
+      "OpenAI API",
+      "ChatGPT",
+      "Claude",
+      "GitHub Copilot",
+      "Cursor",
+    ],
+    "Cloud & DevOps": [
       "Docker",
       "GitHub Actions",
-      "CI/CD",
-      "AWS (Foundational)",
       "Vercel",
       "Render",
+      "AWS Fundamentals",
     ],
-    "Architecture & Patterns": [
-      "MVC",
-      "Modular Design",
-      "Reusable Components",
-      "SaaS-Oriented Design",
-    ],
-    Tools: ["Agile / Scrum", "Git", "Jest", "VS Code"],
+    Tools: ["Git", "GitHub", "Postman", "Jest", "MySQL Workbench", "Agile/Scrum"],
   };
 
   return (
     <section id="skills" className="px-6 md:px-10 py-16 text-white text-center">
-      {/* Title */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -44,7 +64,6 @@ export default function Skills() {
         Skills
       </motion.h2>
 
-      {/* Skill groups */}
       <div className="space-y-10 max-w-3xl mx-auto">
         {Object.entries(skills).map(([category, items], index) => (
           <motion.div

@@ -59,7 +59,7 @@ export default function Contact() {
         className="mt-10 flex justify-center gap-6"
       >
         <a
-          href="https://github.com/Noobod"
+          href="https://github.com/yadavkapil-dev"
           target="_blank"
           className="hover:text-purple-400 transition text-xl"
         >

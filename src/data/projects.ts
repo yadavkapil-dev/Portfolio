@@ -1,130 +1,132 @@
 export const projects = [
   {
     id: "xflyve",
-    title: "XFlyve Logistics Automation Platform",
+    title: "XFlyve Logistics Platform",
     image: "/projects/xflyve.png",
     description:
-      "An internal web application built to replace spreadsheet-based logistics workflows and reduce manual operational effort by ~70%.",
+      "A full-stack logistics platform that digitised freight operations, replacing spreadsheet, phone, and WhatsApp-based workflows while reducing manual administration by approximately 70%.",
     tech: [
       "React",
       "Node.js",
       "Express",
       "MongoDB",
+      "JWT",
+      "Cloudinary",
       "Docker",
-      "GitHub Actions",
+      "Vercel",
+      "Render",
     ],
     live: "https://xflyve.vercel.app/",
-    github: "https://github.com/Noobod/XFlyve",
+    github: "https://github.com/yadavkapil-dev/XFlyve",
     details: `
-XFlyve is an internal logistics automation tool I designed and built while working in operations to streamline daily coordination tasks.
+XFlyve is a full-stack logistics automation platform built to streamline daily freight operations and reduce manual administration.
 
 ✦ Key Features:
-- Public landing page for company access
-- Secure admin login to create and assign jobs
-- Driver login to view assigned tasks
-- Role-based authentication and authorization
-- File uploads for operational documents
-- Dockerized setup with CI/CD using GitHub Actions (working knowledge)
+- Admin dashboard for job creation, assignment, tracking, and reporting
+- Driver workflows for viewing assigned jobs and updating job status
+- Proof-of-delivery uploads using Cloudinary
+- Work diary, work log, and invoice-related workflows
+- JWT authentication and role-based access control
+- Docker-based backend setup and cloud deployment using Vercel and Render
 
 ✦ Impact:
-Reduced daily manual operational work by ~70% by replacing Excel-based coordination.
-  `,
+Reduced manual operational workload by approximately 70% by replacing spreadsheet, phone, and WhatsApp-based coordination with a centralised workflow platform.
+    `,
   },
 
   {
     id: "wordpress",
-    title: "Community Voice — WordPress Plugin",
+    title: "Community Voice | WordPress Plugin",
     image: "/projects/Wordpress.png",
     description:
-      "A custom WordPress plugin built during my internship to capture community concerns (anonymous option), track requests in admin, and notify users via email.",
-    tech: ["PHP", "WordPress Plugin APIs", "MySQL", "AI Chatbot Integration"],
+      "A custom WordPress plugin built during my internship to replace manual email-based submissions with a structured request tracking workflow.",
+    tech: ["PHP", "WordPress APIs", "MySQL", "File Uploads", "Email Notifications"],
     live: "https://sreenipillamarri.com.au/",
     details: `
-Community Voice is a WordPress plugin I proposed and built to replace email-based submissions with a structured workflow inside WordPress.
+Community Voice is a custom WordPress plugin built during my internship at Softlabs to replace email-only submissions with a structured workflow inside WordPress.
 
 ✦ Key Features:
-- Front-end form with optional anonymous submission
-- File upload support and reference ID generation per submission
-- Admin workflow with request status tracking (Pending / In Progress / Resolved / Closed)
-- Email notifications to admin and user (when not anonymous)
-- Integrated and configured an AI chatbot (FastBots) to support public-facing queries
+- Frontend request form with optional anonymous submission
+- File upload support and structured request storage
+- Admin dashboard for request tracking and status management
+- Email notifications for admins and users
+- Reference ID generation for submitted requests
 
 ✦ Purpose:
-Built during my internship to create a reliable, trackable process for community requests.
-  `,
+Built to improve request visibility, reduce manual email handling, and create a more reliable tracking process for community submissions.
+    `,
   },
 
   {
     id: "wanderlust",
-    title: "Wanderlust Booking Platform",
+    title: "Wanderlust | Accommodation Booking Platform",
     image: "/projects/Wanderlust.png",
     description:
-      "Airbnb-style booking system with search, filters, authentication, image uploads and admin dashboard.",
-    tech: ["Node.js", "Express", "MongoDB", "JWT", "Cloudinary", "EJS"],
-    live: "https://wanderlust-mern.onrender.com/",
-    github: "https://github.com/Noobod/Wanderlust-Booking",
+      "A full-stack accommodation booking platform with authentication, listing management, image uploads, reviews, and booking workflows.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Cloudinary"],
+    live: "https://wanderlust-zba2.onrender.com/listings",
+    github: "https://github.com/yadavkapil-dev/Wanderlust",
     details: `
-      A full booking platform inspired by Airbnb.
+Wanderlust is a full-stack accommodation booking platform inspired by modern travel marketplace applications.
 
-      ✦ Features:
-      - Login / Signup with JWT
-      - Booking system with filters and search
-      - Cloudinary-based image upload system
-      - Admin moderation and review system
+✦ Key Features:
+- User authentication and session-based access
+- Listing creation, editing, and deletion
+- Booking and review workflows
+- Cloudinary image upload and storage
+- MVC backend architecture using Express and MongoDB
+- Server-rendered pages using EJS
 
-      ✦ Outcome:
-      Built as a full MERN hands-on scalable learning project.
+✦ Purpose:
+Built to implement a complete accommodation booking workflow using backend routing, authentication, database modelling, image uploads, and server-rendered UI.
     `,
   },
 
   {
     id: "tradetrack",
-    title: "TradeTrack — Trading Dashboard Simulation",
+    title: "TradeTrack | Trading Dashboard",
     image: "/projects/TradeTrack.png",
     description:
-      "A responsive trading dashboard simulation built to practice dashboard-heavy UI, authentication, and data visualisation using the MERN stack.",
+      "A full-stack trading dashboard for managing holdings, positions, simulated orders, and portfolio analytics.",
     tech: [
       "React",
-      "Bootstrap",
-      "Material UI",
-      "Chart.js",
       "Node.js",
       "Express",
       "MongoDB",
+      "Chart.js",
+      "Material UI",
     ],
     live: "https://trade-track-front.vercel.app",
-    github: "https://github.com/Noobod/TradeTrack",
+    github: "https://github.com/yadavkapil-dev/TradeTrack",
     details: `
-TradeTrack is a simulated trading dashboard inspired by modern stock trading platforms.
-The project focuses on building a realistic dashboard experience using simulated data.
+TradeTrack is a full-stack trading dashboard that simulates portfolio management, holdings, positions, orders, and market analytics using a modern React interface.
 
 ✦ Key Features:
 - Authentication with simulated user accounts
 - Dashboard views for holdings, positions, and orders
-- Interactive charts using Chart.js
-- Simulated order placement and historical data
-- Fully responsive UI for desktop and mobile
+- Interactive financial charts using Chart.js
+- Simulated order placement and portfolio workflows
+- Responsive UI for desktop and mobile devices
 
 ✦ Architecture:
-- React-based landing and dashboard interfaces
-- Express API with MongoDB data models
-- Clear separation between frontend and backend
+- React frontend with reusable dashboard components
+- Express backend with REST API routes
+- MongoDB data models for portfolio and trading workflows
 
 ✦ Purpose:
-Built as a learning-focused project to understand dashboard design, authentication flows, and data visualisation in a MERN application.
-  `,
+Built to explore dashboard architecture, authentication, REST APIs, and data visualisation in a modern full-stack application.
+    `,
   },
 
   {
     id: "meetify",
-    title: "Meetify — Real-Time Video Meeting Platform",
+    title: "Meetify | Real-Time Video Meeting Platform",
     image: "/projects/Meetify.png",
     description:
-      "A real-time video meeting platform built to understand WebRTC, real-time signaling, and multi-user communication using a full MERN backend.",
+      "A real-time video meeting platform built using WebRTC, Socket.IO, React, Node.js, Express, and MongoDB.",
     tech: [
       "React",
       "Vite",
-      "CSS Modules",
       "Node.js",
       "Express",
       "MongoDB",
@@ -132,26 +134,26 @@ Built as a learning-focused project to understand dashboard design, authenticati
       "WebRTC",
     ],
     live: "https://meetify-frontend.onrender.com",
-    github: "https://github.com/Noobod/Meetify",
+    github: "https://github.com/yadavkapil-dev/Meetify",
     details: `
-Meetify is a full-stack real-time video meeting application built to explore peer-to-peer communication and real-time systems.
+Meetify is a full-stack real-time video meeting application built to support browser-based audio and video communication.
 
 ✦ Key Features:
-- User authentication (register / login)
-- Create and join video meetings
+- User authentication with register and login flows
+- Meeting creation and join functionality
 - Real-time audio and video streaming using WebRTC
-- Socket.IO-based signaling for peer connection setup
-- Responsive UI across devices
-- Meeting history stored in the database
+- Socket.IO-based signalling for peer connection setup
+- Responsive meeting interface across devices
+- Meeting history stored in MongoDB
 
 ✦ Architecture:
 - React frontend built with Vite
 - Express backend with MongoDB for persistence
 - WebRTC for peer-to-peer media streaming
-- Socket.IO for signaling and room coordination
+- Socket.IO for signalling and room coordination
 
 ✦ Purpose:
-Built as a learning-focused project to understand real-time communication, signaling, and multi-user application flows in a full-stack environment.
-  `,
+Built to implement real-time communication using WebRTC, Socket.IO, authentication, and backend services.
+    `,
   },
 ];

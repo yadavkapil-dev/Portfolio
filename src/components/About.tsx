@@ -25,56 +25,62 @@ export default function About() {
         className="space-y-4 text-sm md:text-base text-gray-300 leading-relaxed"
       >
         <p>
-          I’m a developer who enjoys turning messy, manual workflows into clean
-          systems that save time. I like building practical software that helps
-          people work faster and with fewer mistakes.
+          I'm a Full-Stack Software Engineer based in Sydney who enjoys solving
+          real business problems through practical software. I like turning
+          manual, repetitive workflows into reliable applications that save
+          people time and make everyday work easier.
         </p>
 
         <p>
-          Most of my work has been with{" "}
+          My primary stack includes{" "}
           <span className="text-purple-400 font-semibold">
-            React, Node.js, TypeScript, Next.js, and MongoDB
+            React, TypeScript, Next.js, Node.js, Express, MongoDB, and MySQL
           </span>
-          . Recently, during my internship, I’ve been building{" "}
+          . During my internship at Softlabs, I built custom WordPress plugins,
+          backend workflow automation, and internal tools used to improve
+          day-to-day business processes.
+        </p>
+
+        <p>
+          My biggest project is{" "}
           <span className="text-purple-400 font-semibold">
-            WordPress custom plugins and backend automation
+            XFlyve Logistics
+          </span>
+          , a full-stack logistics platform built to replace spreadsheet,
+          WhatsApp, and phone-based operations. The platform digitised job
+          allocation, proof of delivery, work diaries, invoicing, and driver
+          workflows, reducing manual administrative effort by approximately{" "}
+          <span className="text-purple-400 font-semibold">70%</span>.
+        </p>
+
+        <p>
+          Alongside XFlyve, I've built{" "}
+          <span className="text-purple-400 font-semibold">TradeTrack</span>, a
+          full-stack trading dashboard,{" "}
+          <span className="text-purple-400 font-semibold">Meetify</span>, a
+          real-time video meeting platform using WebRTC and Socket.IO, and{" "}
+          <span className="text-purple-400 font-semibold">Wanderlust</span>, a
+          full-stack accommodation booking platform. These projects have helped
+          me strengthen my understanding of system design, REST APIs,
+          authentication, databases, cloud deployment, and modern full-stack
+          development.
+        </p>
+
+        <p>
+          I enjoy learning new technologies, writing clean and maintainable
+          code, collaborating in Agile teams, and continuously improving my
+          engineering skills. Recently, I've also been exploring AI-assisted
+          development workflows and building software with OpenAI APIs and
+          modern AI tools.
+        </p>
+
+        <p>
+          I'm currently looking for a{" "}
+          <span className="text-purple-400 font-semibold">
+            full-time Full-Stack Software Engineer
           </span>{" "}
-          for real production requirements.
-        </p>
-
-        <p>
-          One of my favourite projects is{" "}
-          <span className="text-purple-400 font-semibold">
-            XFlyve (logistics automation)
-          </span>
-          , which replaced spreadsheet-heavy coordination and reduced daily
-          admin effort by{" "}
-          <span className="text-purple-400 font-semibold">~70%</span>. I’ve also
-          built{" "}
-          <span className="text-purple-400 font-semibold">Wanderlust</span> (a
-          full-stack accommodation booking platform),{" "}
-          <span className="text-purple-400 font-semibold">TradeTrack</span> (a
-          trading dashboard simulation), and{" "}
-          <span className="text-purple-400 font-semibold">Meetify</span> (a
-          real-time WebRTC meeting app).{" "}
-          <span className="text-purple-400 font-semibold">JobPilot</span> is a
-          planned project I’m designing to automate parts of the job search
-          process.
-        </p>
-
-        <p>
-          I focus on clean architecture, reusable components, and writing code
-          that’s easy to maintain. I’m comfortable working in Agile teams and
-          turning requirements into reliable features.
-        </p>
-
-        <p>
-          I'm based in Sydney with full Australian work rights and currently seeking a{" "}
-          <span className="text-purple-400 font-semibold">
-            full-time developer role
-          </span>. I’m looking for a team where I can learn from strong engineers,
-          contribute to real projects, and keep growing as a full-stack
-          developer.
+          opportunity where I can contribute to meaningful products, learn from
+          experienced engineers, and continue growing as a software developer.
         </p>
       </motion.div>
     </section>
