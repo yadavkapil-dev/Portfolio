@@ -1,117 +1,156 @@
 // src/data/aiKnowledge.ts
+
 export const aiKnowledge = {
   skills: `
-Kapil Yadav — Full-Stack Software Engineer (Sydney)
+Kapil Yadav — Full-Stack Software Engineer based in Sydney
 
 Languages:
 • Java, JavaScript, TypeScript, PHP, HTML5, CSS3, SQL
 
 Frontend:
 • React.js, Next.js, Vite
-• Tailwind CSS, Material UI, Bootstrap
+• Tailwind CSS, Material UI, Bootstrap, Framer Motion
 
 Backend:
 • Node.js, Express.js, REST APIs, Socket.IO
-• JWT Authentication, OpenAI API Integration
-• WordPress Custom Plugins, WordPress APIs
+• JWT and Passport.js Authentication
+• OpenAI API Integration
+• WordPress Custom Plugins and WordPress APIs
 
-Databases:
-• MongoDB, Mongoose, MySQL, SQL Fundamentals
-• Backup & Recovery
+Databases and Storage:
+• MongoDB, Mongoose, MySQL
+• Cloudinary
 
-AI & Automation:
+Cloud and DevOps:
+• Docker, GitHub Actions
+• AWS: EC2, S3, IAM
+• Vercel, Render
+
+Tools and Practices:
+• Git, GitHub, Postman, Jest, MySQL Workbench
+• Agile and Scrum
+
+AI-Assisted Development:
 • OpenAI API, ChatGPT, Claude, GitHub Copilot, Cursor
-
-DevOps & Tools:
-• Docker, GitHub Actions, Vercel, Render
-• AWS Fundamentals, Git, GitHub, Postman, Jest, MySQL Workbench
-• Agile/Scrum
 `,
 
   projects: `
 Highlighted Projects:
 
 1) XFlyve Logistics Automation Platform
-   - Full-stack logistics workflow platform built with React, Node.js, Express.js, MongoDB, JWT, Cloudinary, Docker, Vercel, and Render
-   - Replaced spreadsheet, phone, and WhatsApp-based freight workflows
-   - Features include admin and driver workflows, job tracking, POD uploads, work diaries, role-based access, and reporting
-   - Reduced manual operational workload by approximately 70%
+   - Independently designed and built a logistics workflow platform after identifying repetitive manual processes while working in fleet operations
+   - Built with React, Node.js, Express.js, MongoDB, JWT, Cloudinary, Docker, Vercel, and Render
+   - Replaced spreadsheet, phone-call, paperwork, and WhatsApp-based coordination with structured admin and driver workflows
+   - Features include job management, driver and truck management, job-status workflows, POD uploads and approvals, work diaries, daily work records, role-based access, reporting, and invoice-readiness rules
+   - Local jobs require an approved Proof of Delivery before invoice readiness
+   - Interstate jobs require both an approved Proof of Delivery and an approved compliance diary
    - Demo: https://xflyve.vercel.app
    - GitHub: https://github.com/yadavkapil-dev/XFlyve
 
-2) TradeTrack — Full-Stack Trading Dashboard
-   - Trading dashboard for holdings, positions, portfolio analytics, authentication, REST APIs, and MongoDB-backed workflows
+2) TradeTrack — Multi-App Trading Dashboard
+   - Built a Zerodha-inspired trading dashboard as separate landing, authenticated dashboard, and Express API applications
+   - Includes Passport.js authentication, holdings, positions, orders, portfolio views, REST APIs, MongoDB, and Chart.js visualisations
    - Demo: https://trade-track-front.vercel.app
    - GitHub: https://github.com/yadavkapil-dev/TradeTrack
 
 3) Meetify — Real-Time Video Meeting Platform
-   - Real-time video meeting platform using React, Node.js, Express.js, WebRTC, Socket.IO, and MongoDB
-   - Features include authentication, meeting creation, participant management, and live meeting events
+   - Built a real-time video meeting application using React, Node.js, Express.js, WebRTC, Socket.IO, and MongoDB
+   - Features include user authentication, meeting creation, peer-to-peer audio and video, Socket.IO signalling, and meeting history
    - Demo: https://meetify-frontend.onrender.com/
    - GitHub: https://github.com/yadavkapil-dev/Meetify
 
 4) Wanderlust — Accommodation Booking Platform
-   - Full-stack accommodation booking platform with authentication, listing management, reviews, bookings, MVC architecture, and Cloudinary image uploads
+   - Built a full-stack accommodation platform using Node.js, Express.js, MongoDB, Mongoose, EJS, Passport.js, Joi, Mapbox, and Cloudinary
+   - Features include user authentication, listing management, reviews, image uploads, maps, and MVC architecture
    - Demo: https://wanderlust-zba2.onrender.com/listings
    - GitHub: https://github.com/yadavkapil-dev/Wanderlust
 
 5) Portfolio Website
-   - Next.js and TypeScript portfolio showcasing projects, technical blogs, resume downloads, and AI chatbot functionality
+   - Built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and MDX
+   - Includes project case studies, technical blogs, resume access, contact functionality, and an AI portfolio assistant
    - Live: https://kapilyadav.dev
 `,
 
   experience: `
 Experience:
 
-• Software Developer Intern — Softlabs | Sydney, Australia | Nov 2025 – Jan 2026
-  - Developed a WordPress plugin to replace manual email-based request handling with a structured, database-driven workflow system
-  - Built admin dashboard features, file uploads, automated notifications, and request tracking using PHP, WordPress APIs, and MySQL
-  - Contributed to feature delivery, defect resolution, and iterative improvements in an Agile team environment
+• Software Engineer Intern — Softlabs
+  Sydney, Australia | Nov 2025 – Jan 2026
 
-• Full-Stack Engineer — XFlyve Logistics | Sydney, Australia | Oct 2024 – Aug 2025
-  - Developed a logistics workflow platform using React, Node.js, Express.js, and MongoDB
-  - Replaced spreadsheet, phone, and WhatsApp-based operations with admin and driver workflows
-  - Built job tracking, POD uploads, work diaries, authentication, role-based access, Cloudinary uploads, and cloud deployment workflows
-  - Reduced manual operational workload by approximately 70%
+  - Developed custom WordPress plugins using PHP, MySQL, and WordPress APIs
+  - Worked on a structured request-management system that replaced manual email-based workflows
+  - Built admin dashboard functionality, public-facing forms, file uploads, request tracking, validation, and automated email notifications
+  - Designed custom MySQL tables for storing submissions, statuses, and reference identifiers
+  - Contributed to feature implementation, debugging, testing, and iterative delivery in an Agile environment
 
-• Web Developer — A Star Infotech | Regional India | Jan 2022 – Oct 2023
-  - Developed responsive client websites using HTML, CSS, JavaScript, PHP, and MySQL
-  - Integrated frontend interfaces with backend services and relational databases
-  - Maintained production websites by resolving defects and implementing new functionality
-  - Collaborated with clients to translate business requirements into practical web solutions
+• Fleet Operations (Part-time) — XFlyve Logistics
+  Sydney, Australia | Oct 2024 – Aug 2025
 
-• Database Administrator — GS Global | Regional India | Nov 2019 – Dec 2021
-  - Administered MySQL databases by managing user accounts, permissions, backups, and recovery procedures
-  - Monitored database performance and supported secure data management practices
+  - Handled job assignments, driver communication, paperwork, Proof-of-Delivery documents, and daily logistics coordination
+  - Identified repetitive manual workflows involving spreadsheets, WhatsApp messages, phone calls, and paper documents
+  - Independently taught myself the MERN stack and built XFlyve as a logistics automation platform based on those operational problems
+  - Designed MongoDB schemas for jobs, drivers, trucks, POD records, work diaries, and daily records
+  - Implemented authentication, role-based access, ownership checks, job-status transitions, approval workflows, reporting, and invoice-readiness logic
+  - Applied Helmet, rate limiting, structured logging, Docker, GitHub Actions, and Artillery load testing
 `,
 
   availability: `
 Availability:
 • Based in Sydney, Australia
-• Temporary Graduate Visa (Subclass 485) with full-time work rights in Australia
-• Available for full-time software engineering, full-stack developer, MERN, React, Node.js, and junior/graduate developer roles
-• Open to opportunities across Sydney, Melbourne, Brisbane, and remote/hybrid roles in Australia
+• Holds a Temporary Graduate Visa (Subclass 485)
+• Full-time working rights in Australia
+• No employer sponsorship required
+• Open to full-time Full-Stack Software Engineer, Software Engineer, React Developer, Node.js Developer, MERN Developer, and graduate or junior software development roles
+• Open to onsite, hybrid, and remote opportunities
+• Willing to relocate within Australia for the right opportunity
 `,
 
   education: `
 Education:
-• Master of Information Technology — Asia Pacific International College, Australia (Completed 2026)
-• Bachelor of Technology (Computer Science) — Jodhpur National University, India (2019)
+
+• Master of Information Technology
+  Asia Pacific International College, Australia
+  Completed 2026
+
+• Bachelor of Technology in Computer Science
+  Jodhpur National University, India
+  Completed 2019
 `,
 
   resume: `
-Resume + portfolio:
+Professional links:
+
 • Portfolio: https://kapilyadav.dev
 • GitHub: https://github.com/yadavkapil-dev
 • LinkedIn: https://linkedin.com/in/yadav-kapil
-• Case studies and additional projects are available on the portfolio.
+• XFlyve Demo: https://xflyve.vercel.app
+• XFlyve GitHub: https://github.com/yadavkapil-dev/XFlyve
+
+Detailed case studies and additional project information are available through the portfolio.
 `,
 
   faqs: `
 Quick Q&A:
-• “What makes Kapil stand out?” → Practical full-stack experience, database administration background, and a logistics platform that reduced manual operational workload by approximately 70%.
-• “Can Kapil explain his work?” → Yes. He can explain projects using problem, solution, architecture, technologies, and business impact.
-• “What roles fit best?” → Junior or early-career Full-Stack Software Engineer, React Developer, Node.js Developer, MERN Developer, Software Developer, and AI-assisted product engineering roles.
-• “Is Kapil available to work in Australia?” → Yes. He is based in Sydney and holds a Temporary Graduate Visa (Subclass 485) with full-time work rights in Australia.
+
+• “What makes Kapil stand out?”
+  → He combines real logistics-domain knowledge with hands-on full-stack development. He identified operational problems while working in fleet operations and independently built software to address them.
+
+• “What is Kapil's strongest project?”
+  → XFlyve, a logistics workflow platform with admin and driver roles, job tracking, POD approvals, compliance diaries, daily records, reporting, authentication, and invoice-readiness rules.
+
+• “Can Kapil explain his work?”
+  → Yes. He can explain the business problem, user workflow, architecture, database models, APIs, security controls, technical decisions, challenges, and future improvements.
+
+• “Does Kapil have Australian software experience?”
+  → Yes. He completed a Software Engineer Internship at Softlabs in Sydney and worked part-time in fleet operations at XFlyve Logistics.
+
+• “What roles fit Kapil best?”
+  → Junior or early-career Full-Stack Software Engineer, Software Engineer, React Developer, Node.js Developer, MERN Developer, and product-focused web development roles.
+
+• “Is Kapil available to work in Australia?”
+  → Yes. He is based in Sydney, holds a Temporary Graduate Visa (Subclass 485), has full-time work rights, and does not require employer sponsorship.
+
+• “Is Kapil willing to relocate?”
+  → Yes. He is willing to relocate within Australia for the right opportunity.
 `,
 };

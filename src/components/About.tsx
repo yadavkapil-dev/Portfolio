@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -25,10 +26,10 @@ export default function About() {
         className="space-y-4 text-sm md:text-base text-gray-300 leading-relaxed"
       >
         <p>
-          I'm a Full-Stack Software Engineer based in Sydney who enjoys solving
-          real business problems through practical software. I like turning
-          manual, repetitive workflows into reliable applications that save
-          people time and make everyday work easier.
+          I&apos;m a Full-Stack Software Engineer based in Sydney who enjoys
+          solving real business problems through practical software. I like
+          turning manual, repetitive workflows into reliable applications that
+          save people time and make everyday work easier.
         </p>
 
         <p>
@@ -36,9 +37,11 @@ export default function About() {
           <span className="text-purple-400 font-semibold">
             React, TypeScript, Next.js, Node.js, Express, MongoDB, and MySQL
           </span>
-          . During my internship at Softlabs, I built custom WordPress plugins,
-          backend workflow automation, and internal tools used to improve
-          day-to-day business processes.
+          . During my internship at Softlabs, I developed custom WordPress
+          plugins using PHP, MySQL, and WordPress APIs to automate internal
+          workflows. I worked on backend features, admin dashboards, request
+          tracking, validation, and collaborated in an Agile development
+          environment.
         </p>
 
         <p>
@@ -46,41 +49,43 @@ export default function About() {
           <span className="text-purple-400 font-semibold">
             XFlyve Logistics
           </span>
-          , a full-stack logistics platform built to replace spreadsheet,
-          WhatsApp, and phone-based operations. The platform digitised job
-          allocation, proof of delivery, work diaries, invoicing, and driver
-          workflows, reducing manual administrative effort by approximately{" "}
-          <span className="text-purple-400 font-semibold">70%</span>.
+          . While working in fleet operations, I identified repetitive manual
+          processes involving spreadsheets, WhatsApp, phone calls, and
+          paperwork. To solve those challenges, I independently designed and
+          built a full-stack logistics platform that digitised job management,
+          Proof of Delivery, work diaries, invoicing workflows, and role-based
+          access for administrators and drivers.
         </p>
 
         <p>
-          Alongside XFlyve, I've built{" "}
+          Alongside XFlyve, I&apos;ve built{" "}
           <span className="text-purple-400 font-semibold">TradeTrack</span>, a
           full-stack trading dashboard,{" "}
           <span className="text-purple-400 font-semibold">Meetify</span>, a
           real-time video meeting platform using WebRTC and Socket.IO, and{" "}
           <span className="text-purple-400 font-semibold">Wanderlust</span>, a
-          full-stack accommodation booking platform. These projects have helped
-          me strengthen my understanding of system design, REST APIs,
-          authentication, databases, cloud deployment, and modern full-stack
-          development.
+          full-stack accommodation booking platform. Together, these projects
+          strengthened my understanding of system design, REST APIs,
+          authentication, databases, cloud deployment, testing, and building
+          production-ready full-stack applications.
         </p>
 
         <p>
           I enjoy learning new technologies, writing clean and maintainable
           code, collaborating in Agile teams, and continuously improving my
-          engineering skills. Recently, I've also been exploring AI-assisted
-          development workflows and building software with OpenAI APIs and
-          modern AI tools.
+          engineering skills. I also use modern AI development tools, including
+          OpenAI APIs, GitHub Copilot, Claude, and Cursor, to prototype ideas,
+          improve productivity, and accelerate development.
         </p>
 
         <p>
-          I'm currently looking for a{" "}
+          I&apos;m currently looking for a{" "}
           <span className="text-purple-400 font-semibold">
             full-time Full-Stack Software Engineer
           </span>{" "}
           opportunity where I can contribute to meaningful products, learn from
-          experienced engineers, and continue growing as a software developer.
+          experienced engineers, and continue growing while building software
+          that solves real business problems.
         </p>
       </motion.div>
     </section>

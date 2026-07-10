@@ -1,38 +1,61 @@
 export const projects = [
   {
-    id: "xflyve",
-    title: "XFlyve Logistics Platform",
-    image: "/projects/xflyve.png",
-    description:
-      "A full-stack logistics platform that digitised freight operations, replacing spreadsheet, phone, and WhatsApp-based workflows while reducing manual administration by approximately 70%.",
-    tech: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Cloudinary",
-      "Docker",
-      "Vercel",
-      "Render",
-    ],
-    live: "https://xflyve.vercel.app/",
-    github: "https://github.com/yadavkapil-dev/XFlyve",
-    details: `
-XFlyve is a full-stack logistics automation platform built to streamline daily freight operations and reduce manual administration.
+  id: "xflyve",
+  title: "XFlyve Logistics Platform",
+  image: "/projects/xflyve.png",
+  description:
+    "A full-stack logistics platform built after identifying manual operational workflows in a transport company. It digitises job management, Proof of Delivery, work diaries, invoicing workflows, and driver operations using a role-based system.",
+
+  tech: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "JWT",
+    "Cloudinary",
+    "Docker",
+    "GitHub Actions",
+    "Vercel",
+    "Render",
+  ],
+
+  live: "https://xflyve.vercel.app/",
+  github: "https://github.com/yadavkapil-dev/XFlyve",
+
+  details: `
+XFlyve is a full-stack logistics workflow platform that I independently designed and built after identifying repetitive manual processes while working in fleet operations.
+
+✦ Problem:
+Daily logistics operations relied heavily on spreadsheets, WhatsApp messages, phone calls, paperwork, and manual follow-ups for job tracking, Proof of Delivery (POD), and compliance records.
+
+✦ Solution:
+Built a role-based logistics platform that centralises operational workflows for both administrators and drivers.
 
 ✦ Key Features:
-- Admin dashboard for job creation, assignment, tracking, and reporting
-- Driver workflows for viewing assigned jobs and updating job status
-- Proof-of-delivery uploads using Cloudinary
-- Work diary, work log, and invoice-related workflows
+- Admin dashboard for creating, assigning, tracking, and managing jobs
+- Driver dashboard for viewing assigned jobs and updating job progress
+- Proof of Delivery uploads and approval workflows
+- Work diary and daily work record management
+- Invoice-readiness rules for local and interstate jobs
 - JWT authentication and role-based access control
-- Docker-based backend setup and cloud deployment using Vercel and Render
+- Cloudinary image uploads
+- Excel and ZIP export tools for reporting
+- Docker containerisation and GitHub Actions CI/CD
 
-✦ Impact:
-Reduced manual operational workload by approximately 70% by replacing spreadsheet, phone, and WhatsApp-based coordination with a centralised workflow platform.
-    `,
-  },
+✦ Technical Highlights:
+- React frontend with Material UI
+- Express REST API
+- MongoDB with Mongoose
+- JWT authentication
+- Role-based authorization
+- Helmet, rate limiting, structured logging
+- Artillery load testing
+- Deployment using Vercel and Render
+
+✦ Outcome:
+The platform replaced fragmented manual workflows with a structured web application that improved day-to-day logistics operations and centralised business processes.
+`,
+ },
 
   {
     id: "wordpress",

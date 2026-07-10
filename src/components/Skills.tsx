@@ -1,95 +1,62 @@
-"use client";
-import { motion } from "framer-motion";
+const skills = {
+  Languages: [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "PHP",
+    "HTML5",
+    "CSS3",
+    "SQL",
+  ],
 
-export default function Skills() {
-  const skills = {
-    Languages: [
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "PHP",
-      "HTML5",
-      "CSS3",
-      "SQL",
-    ],
-    Frontend: [
-      "React.js",
-      "Next.js",
-      "Vite",
-      "Tailwind CSS",
-      "Material UI",
-      "Bootstrap",
-    ],
-    Backend: [
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "JWT Authentication",
-      "Socket.IO",
-      "OpenAI API",
-    ],
-    Databases: [
-      "MongoDB",
-      "Mongoose",
-      "MySQL",
-      "SQL Fundamentals",
-      "Backup & Recovery",
-    ],
-    "AI & Automation": [
-      "OpenAI API",
-      "ChatGPT",
-      "Claude",
-      "GitHub Copilot",
-      "Cursor",
-    ],
-    "Cloud & DevOps": [
-      "Docker",
-      "GitHub Actions",
-      "Vercel",
-      "Render",
-      "AWS Fundamentals",
-    ],
-    Tools: ["Git", "GitHub", "Postman", "Jest", "MySQL Workbench", "Agile/Scrum"],
-  };
+  Frontend: [
+    "React.js",
+    "Next.js",
+    "Vite",
+    "Tailwind CSS",
+    "Material UI",
+    "Bootstrap",
+    "Framer Motion",
+  ],
 
-  return (
-    <section id="skills" className="px-6 md:px-10 py-16 text-white text-center">
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        viewport={{ once: true }}
-        className="text-3xl md:text-4xl font-bold mb-10"
-      >
-        Skills
-      </motion.h2>
+  Backend: [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "JWT / Passport.js Authentication",
+    "Socket.IO",
+    "OpenAI API",
+  ],
 
-      <div className="space-y-10 max-w-3xl mx-auto">
-        {Object.entries(skills).map(([category, items], index) => (
-          <motion.div
-            key={category}
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: index * 0.08 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-lg md:text-xl font-semibold mb-3 text-purple-300">
-              {category}
-            </h3>
+  Databases: [
+    "MongoDB",
+    "Mongoose",
+    "MySQL",
+    "Cloudinary",
+  ],
 
-            <div className="flex flex-wrap justify-center gap-2 md:gap-3">
-              {items.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 md:px-4 py-1.5 md:py-2 text-xs md:text-sm bg-white/5 border border-purple-500/20 rounded-lg text-gray-300 hover:bg-purple-600/30 hover:border-purple-500/40 transition cursor-default"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </section>
-  );
-}
+  "Cloud & DevOps": [
+    "Docker",
+    "GitHub Actions",
+    "AWS (EC2, S3, IAM)",
+    "Vercel",
+    "Render",
+  ],
+
+  "AI & Automation": [
+    "OpenAI API",
+    "ChatGPT",
+    "Claude",
+    "GitHub Copilot",
+    "Cursor",
+  ],
+
+  Tools: [
+    "Git",
+    "GitHub",
+    "Postman",
+    "Jest",
+    "MySQL Workbench",
+    "Agile/Scrum",
+  ],
+};
