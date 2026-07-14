@@ -8,8 +8,8 @@ import ChatButton from "../components/ChatButton";
 import Skills from "../components/Skills";
 import About from "../components/About";
 import Footer from "../components/Footer";
-import BlogPreview from "../components/BlogPreview";
 import Education from "../components/Education";
+import Divider from "../components/ui/Divider";
 
 export default function Home() {
   return (
@@ -19,18 +19,21 @@ export default function Home() {
       {/* SAFE: wrapped in client animation */}
       <PageWrapper>
         <Hero />
+        <Divider />
         <About />
+        <Divider />
         <Projects />
+        <Divider />
         <Skills />
+        <Divider />
         <Experience />
+        <Divider />
         <Education />
       </PageWrapper>
 
-      {/* VERY IMPORTANT: BlogPreview must be OUTSIDE client wrapper */}
-      <BlogPreview />
-
       {/* SAFE again */}
       <PageWrapper>
+        <Divider />
         <Contact />
         <Footer />
       </PageWrapper>

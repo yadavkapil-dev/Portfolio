@@ -1,14 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { btnPrimary, btnSecondary } from "../lib/ui";
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false);
   const [showToast, setShowToast] = useState(false);
-
-  useEffect(() => setMounted(true), []);
-
-  if (!mounted) return null;
 
   const resumePath = "/projects/Resume_Kapil_Yadav_Fullstack_Engineer.pdf";
 
@@ -42,8 +38,8 @@ export default function Hero() {
 
   return (
     <div
-      id="top"
-      className="relative min-h-[70vh] flex flex-col items-center justify-center text-center px-6"
+      id="home"
+      className="relative min-h-[85vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-bg"
     >
       {showToast && (
         <div className="fixed top-4 right-4 bg-green-600 text-white px-4 py-3 rounded-lg shadow-lg z-50">
@@ -51,43 +47,58 @@ export default function Hero() {
         </div>
       )}
 
-      <div className="absolute w-[260px] h-[260px] md:w-[380px] md:h-[380px] bg-purple-600/30 blur-[150px] rounded-full animate-pulse pointer-events-none" />
+      <div className="absolute w-[280px] h-[280px] md:w-[460px] md:h-[460px] bg-accent/10 blur-[150px] rounded-full pointer-events-none" />
+
+      <span
+        className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs md:text-sm text-fg-secondary opacity-0 animate-[fadeInUp_0.6s_ease-out_forwards]"
+      >
+        <span className="relative flex h-2 w-2">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
+        </span>
+        Australia • Open to Full-Time Roles
+      </span>
 
       <h1
-        className="mt-4 text-4xl md:text-6xl font-bold tracking-tight cursor-default transition-all duration-300 ease-out hover:-translate-y-1 hover:text-purple-400 opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
-        style={{ animationDelay: "0.3s" }}
+        className="mt-6 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-fg cursor-default transition-all duration-300 ease-out hover:-translate-y-1 hover:text-accent opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
+        style={{ animationDelay: "0.15s" }}
       >
         Kapil Yadav
       </h1>
 
-      <p className="mt-3 text-lg md:text-2xl text-purple-400 font-medium">
+      <p
+        className="mt-4 text-lg md:text-2xl text-accent font-medium opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
+        style={{ animationDelay: "0.3s" }}
+      >
         Full-Stack Software Engineer
       </p>
 
-      <p className="mt-2 text-sm md:text-base text-gray-500 italic">
+      <p
+        className="mt-3 max-w-xl text-sm md:text-base text-fg-muted italic opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
+        style={{ animationDelay: "0.4s" }}
+      >
         Full Work Rights in Australia
       </p>
 
-      <p className="mt-2 text-sm md:text-base text-gray-500 italic">
-        Australia • Open to Full-Time Roles
-      </p>
+      <div
+        className="mt-9 flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
+        style={{ animationDelay: "0.5s" }}
+      >
+        <button
+          onClick={() => scrollTo("#projects")}
+          className={`${btnPrimary} w-full sm:w-48 cursor-pointer`}
+        >
+          View My Work
+        </button>
 
-      <div className="mt-7 flex gap-4 justify-center">
-  <button
-    onClick={() => scrollTo("#projects")}
-    className="order-1 w-40 md:w-48 flex items-center justify-center cursor-pointer px-5 py-2 md:px-6 md:py-3 bg-purple-600 hover:bg-purple-700 transition rounded-lg text-sm md:text-base"
-  >
-    View My Work
-  </button>
-
-  <a
-    href="/projects/Kapil_Yadav_Fullstack_Engineer.pdf"
-    onClick={handleDownload}
-    className="order-2 w-40 md:w-48 flex items-center justify-center cursor-pointer px-5 py-2 md:px-6 md:py-3 border border-gray-600 hover:border-purple-500 hover:text-purple-300 hover:bg-purple-600/10 transition rounded-lg text-sm md:text-base"
-  >
-    Download Resume
-  </a>
-</div>
+        <a
+          href="/projects/Kapil_Yadav_Fullstack_Engineer.pdf"
+          onClick={handleDownload}
+          className={`${btnSecondary} w-full sm:w-48 cursor-pointer`}
+        >
+          Download Resume
+        </a>
+      </div>
     </div>
   );
 }

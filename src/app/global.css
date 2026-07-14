@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
+/* Dark mode design tokens: deep charcoal / midnight zinc with a restrained purple accent */
+@theme {
+  --color-bg: #09090b;
+  --color-bg-alt: #0f1115;
+  --color-surface: #14171d;
+  --color-elevated: #181b22;
+  --color-border: #272a31;
+  --color-fg: #f4f4f5;
+  --color-fg-secondary: #a1a1aa;
+  --color-fg-muted: #71717a;
+  --color-accent: #a855f7;
+  --color-accent-hover: #9333ea;
+  --color-accent-soft: rgba(168, 85, 247, 0.1);
+}
+
 /* Required for smooth scrolling */
 html {
   scroll-behavior: smooth;
+}
+
+/* Accessible focus states across the site */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 /* Optional animations you already use */

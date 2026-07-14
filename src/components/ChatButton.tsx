@@ -113,9 +113,9 @@ export default function ChatButton() {
         animate={{ y: open ? 10 : 0 }}
         onClick={() => setOpen(true)}
         aria-label="Open chat"
-        className="fixed bottom-20 right-5 md:right-6 w-12 h-12 md:w-14 md:h-14 
-                   rounded-full bg-purple-600 hover:bg-purple-700 text-white 
-                   flex items-center justify-center shadow-xl 
+        className="fixed bottom-20 right-5 md:right-6 w-12 h-12 md:w-14 md:h-14
+                   rounded-full bg-accent hover:bg-accent-hover text-fg
+                   flex items-center justify-center shadow-lg shadow-black/30
                    text-xl md:text-2xl cursor-pointer transition z-[999]"
       >
         💬
@@ -141,16 +141,16 @@ export default function ChatButton() {
             <div className="relative bottom-6 right-4 md:right-6 pointer-events-auto">
               <div
                 className="w-72 md:w-80 h-[420px] md:h-[500px]
-                           bg-black/70 backdrop-blur-xl border border-white/10 rounded-xl 
-                           shadow-xl p-4 flex flex-col text-white"
+                           bg-elevated backdrop-blur-xl border border-border rounded-xl
+                           shadow-xl shadow-black/30 p-4 flex flex-col text-fg"
               >
                 {/* Header */}
                 <div className="flex justify-between items-center mb-3">
                   <div>
-                    <p className="font-semibold text-sm md:text-base">
+                    <p className="font-semibold text-sm md:text-base text-fg">
                       Kapil’s Portfolio Assistant
                     </p>
-                    <p className="text-[11px] md:text-xs text-gray-400">
+                    <p className="text-[11px] md:text-xs text-fg-muted">
                       Ask about projects, experience, skills, or availability.
                     </p>
                   </div>
@@ -161,13 +161,13 @@ export default function ChatButton() {
                         localStorage.removeItem("kapil-ai-chat");
                         setMessages([]);
                       }}
-                      className="text-gray-300 hover:text-white text-xs cursor-pointer"
+                      className="text-fg-secondary hover:text-fg text-xs cursor-pointer"
                     >
                       Clear
                     </button>
 
                     <button
-                      className="text-gray-400 hover:text-white text-lg cursor-pointer"
+                      className="text-fg-muted hover:text-fg text-lg cursor-pointer"
                       onClick={() => setOpen(false)}
                       aria-label="Close chat"
                     >
@@ -179,22 +179,22 @@ export default function ChatButton() {
                 {/* Scroll area */}
                 <div
                   ref={chatRef}
-                  className="flex-1 overflow-y-auto overscroll-contain space-y-3 text-xs md:text-sm 
-                             p-2 rounded-lg border border-white/10"
+                  className="flex-1 overflow-y-auto overscroll-contain space-y-3 text-xs md:text-sm
+                             p-2 rounded-lg border border-border"
                 >
                   {/* Suggestions (only when chat is empty) */}
                   {messages.length === 0 && (
-                    <div className="text-gray-300">
-                      <p className="font-semibold mb-2">Try asking:</p>
+                    <div className="text-fg-secondary">
+                      <p className="font-semibold mb-2 text-fg">Try asking:</p>
 
                       <div className="flex flex-wrap gap-2">
                         {SUGGESTED_QUESTIONS.map((q) => (
                           <button
                             key={q}
                             onClick={() => sendMessage(q)}
-                            className="px-2 py-1 bg-white/10 border border-white/20 
-                                       rounded-md hover:bg-purple-600/30 hover:border-purple-500/40
-                                       transition text-gray-200"
+                            className="px-2 py-1 bg-surface border border-border
+                                       rounded-md hover:bg-accent-soft hover:border-accent/40
+                                       transition text-fg-secondary"
                           >
                             {q}
                           </button>
@@ -212,8 +212,8 @@ export default function ChatButton() {
                       transition={{ duration: 0.18 }}
                       className={`p-2 rounded-lg max-w-[88%] leading-relaxed whitespace-pre-line ${
                         msg.role === "user"
-                          ? "ml-auto bg-purple-600 text-white"
-                          : "bg-white/10 text-gray-200"
+                          ? "ml-auto bg-accent text-fg"
+                          : "bg-surface text-fg-secondary"
                       }`}
                     >
                       {msg.content}
@@ -222,7 +222,7 @@ export default function ChatButton() {
 
                   {/* Typing indicator */}
                   {loading && (
-                    <div className="bg-white/10 text-gray-300 p-2 rounded-lg inline-block">
+                    <div className="bg-surface text-fg-secondary p-2 rounded-lg inline-block">
                       ✨ Thinking…
                     </div>
                   )}
@@ -240,13 +240,13 @@ export default function ChatButton() {
                       }
                     }}
                     placeholder="Ask me something..."
-                    className="flex-1 px-3 py-2 rounded-md bg-white/10 
-                               border border-white/20 text-white outline-none"
+                    className="flex-1 px-3 py-2 rounded-md bg-surface
+                               border border-border text-fg outline-none"
                   />
                   <button
                     onClick={() => sendMessage()}
                     disabled={loading}
-                    className="px-3 py-2 bg-purple-600 hover:bg-purple-700 
+                    className="px-3 py-2 bg-accent hover:bg-accent-hover text-fg
                                rounded-md text-xs md:text-sm disabled:opacity-60"
                   >
                     Send

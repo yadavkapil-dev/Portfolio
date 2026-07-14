@@ -82,7 +82,7 @@ Built to improve request visibility, reduce manual email handling, and create a 
 
   {
     id: "wanderlust",
-    title: "Wanderlust | Accommodation Booking Platform",
+    title: "Wanderlust | Accommodation Listings \& Reviews Platform",
     image: "/projects/Wanderlust.png",
     description:
       "A full-stack accommodation booking platform with authentication, listing management, image uploads, reviews, and booking workflows.",

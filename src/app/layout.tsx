@@ -43,10 +43,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} bg-black`}
+      className={`${geistSans.variable} ${geistMono.variable} bg-bg`}
     >
-      <body className="bg-gradient-to-br from-black via-[#0b0b12] to-black text-white min-h-screen">
-        
+      <body className="bg-bg text-fg min-h-screen">
+
         {/* Render pages FIRST (server components stay safe) */}
         {children}
 

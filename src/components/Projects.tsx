@@ -3,108 +3,162 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { projects } from "../data/projects";
 import Modal from "./Modal";
+import BrowserFrame from "./ui/BrowserFrame";
+import SectionHeading from "./ui/SectionHeading";
+import { btnGhost, btnPrimary, btnSecondary, sectionPadding } from "../lib/ui";
 
 export default function Projects() {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <section
-      id="projects"
-      className="px-6 md:px-10 py-16 md:py-20 text-white text-center"
-    >
-      <h2 className="text-3xl md:text-4xl font-bold mb-10 md:mb-14">
-        Projects
-      </h2>
+    <section id="projects" className="w-full bg-bg">
+      <div className={`${sectionPadding} text-fg max-w-6xl mx-auto`}>
+        <SectionHeading
+          title="Projects"
+          description="A collection of full-stack applications I've designed, built, and shipped end to end."
+        />
 
-      {projects.map((project) => (
-        <motion.div
-          key={project.id}
-          onClick={() => setActive(project.id)}
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          whileHover={{ scale: 1.015 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="will-change-transform will-change-opacity cursor-pointer group flex flex-col md:flex-row items-center gap-6 md:gap-8 p-5 md:p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-lg max-w-4xl md:max-w-5xl mx-auto hover:border-purple-500/40 hover:shadow-[0_0_18px_-6px_rgba(168,85,247,0.5)] transition-all duration-300 mb-8 md:mb-10"
-        >
-          {/* Screenshot Block */}
-          <div className="w-full md:w-1/2 h-40 md:h-60 rounded-xl overflow-hidden bg-gradient-to-br from-purple-700/20 to-black border border-white/10 flex items-center justify-center">
-            {project.image ? (
-              <img
-                src={project.image}
-                alt={`${project.title} preview`}
-                loading="lazy"
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <span className="text-gray-500 text-xs md:text-sm">
-                Coming Soon...
-              </span>
-            )}
-          </div>
+        <div className="space-y-8 md:space-y-10">
+          {projects.map((project, index) => {
+            const reversed = index % 2 === 1;
 
-          {/* Text */}
-          <div className="w-full md:w-1/2 space-y-3 md:space-y-4">
-            <h3 className="text-xl md:text-2xl font-semibold">
-              {project.title}
-            </h3>
-            <p className="text-gray-400 text-sm md:text-base">
-              {project.description}
-            </p>
+            return (
+              <motion.div
+                key={project.id}
+                onClick={() => setActive(project.id)}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                className="will-change-transform will-change-opacity cursor-pointer group grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12 p-6 md:p-10 rounded-3xl bg-surface border border-border shadow-lg shadow-black/20 hover:border-accent/40 hover:bg-elevated transition-all duration-300"
+              >
+                {/* Screenshot */}
+                <div className={reversed ? "md:order-2" : "md:order-1"}>
+                  <BrowserFrame
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    url={project.live}
+                  />
+                </div>
 
-            {/* Tech Pills */}
-            <div className="flex flex-wrap gap-2 justify-center text-xs md:text-sm">
-              {project.tech.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 rounded-md bg-purple-600/20 border border-purple-600/30 text-purple-300"
+                {/* Text */}
+                <div
+                  className={`${
+                    reversed ? "md:order-1" : "md:order-2"
+                  } text-center md:text-left space-y-4`}
                 >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-        </motion.div>
-      ))}
+                  <span className="text-xs font-mono text-accent/70 tracking-widest">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
 
-      {/* Modal */}
-      {projects.map(
-        (project) =>
-          active === project.id && (
-            <Modal
-              key={project.id}
-              open={true}
-              title={project.title}
-              onClose={() => setActive(null)}
-            >
-              <p className="whitespace-pre-line text-sm md:text-base leading-relaxed">
-                {project.details}
-              </p>
+                  <div className="flex items-center justify-center md:justify-start gap-3 flex-wrap">
+                    <h3 className="text-xl md:text-2xl font-bold tracking-tight text-fg">
+                      {project.title}
+                    </h3>
 
-              <div className="flex flex-col md:flex-row gap-4 mt-6 justify-center">
-                {project.live && (
+                    <div className="flex items-center gap-3">
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          title="Live Demo"
+                          className="text-fg-muted hover:text-accent transition"
+                        >
+                          <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+                            <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h6v2H5v12h12v-6h2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
+                          </svg>
+                        </a>
+                      )}
+
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          title="GitHub"
+                          className="text-fg-muted hover:text-accent transition"
+                        >
+                          <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+                            <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.96.58.11.79-.25.79-.56v-2.06c-3.2.7-3.87-1.4-3.87-1.4-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.26 3.38.96.11-.76.41-1.26.75-1.55-2.55-.29-5.24-1.27-5.24-5.66 0-1.25.44-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17A10.7 10.7 0 0 1 12 6.8c.97.01 1.94.13 2.85.38 2.2-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.16 1.82 1.16 3.07 0 4.41-2.7 5.36-5.27 5.65.43.37.81 1.1.81 2.23v3.31c0 .32.21.68.8.56A10.99 10.99 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
+                  </div>
+
+                  <p className="text-fg-secondary text-sm md:text-base leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Tech Pills */}
+                  <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                    {project.tech.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-1 rounded-full bg-elevated border border-border text-fg-secondary text-xs md:text-sm"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+
+                  <span className={`${btnGhost} pt-1`}>
+                    View Case Study
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="w-4 h-4 fill-current transition-transform duration-300 group-hover:translate-x-1"
+                    >
+                      <path d="M13 5l7 7-7 7-1.41-1.41L16.17 13H4v-2h12.17l-4.58-4.59L13 5Z" />
+                    </svg>
+                  </span>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        {/* Modal */}
+        {projects.map(
+          (project) =>
+            active === project.id && (
+              <Modal
+                key={project.id}
+                open={true}
+                title={project.title}
+                onClose={() => setActive(null)}
+              >
+                <p className="whitespace-pre-line text-sm md:text-base leading-relaxed">
+                  {project.details}
+                </p>
+
+                <div className="flex flex-col md:flex-row gap-4 mt-6 justify-center">
+                  {project.live && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                      className={btnPrimary}
+                    >
+                      Live Demo
+                    </a>
+                  )}
+
                   <a
-                    href={project.live}
+                    href={project.github}
                     target="_blank"
                     onClick={(e) => e.stopPropagation()}
-                    className="px-5 py-2 rounded-lg bg-purple-600 hover:bg-purple-700 transition text-center"
+                    className={btnSecondary}
                   >
-                    Live Demo
+                    GitHub
                   </a>
-                )}
-
-                <a
-                  href={project.github}
-                  target="_blank"
-                  onClick={(e) => e.stopPropagation()}
-                  className="px-5 py-2 border border-white/20 hover:border-white transition rounded-lg text-center"
-                >
-                  GitHub
-                </a>
-              </div>
-            </Modal>
-          )
-      )}
+                </div>
+              </Modal>
+            )
+        )}
+      </div>
     </section>
   );
 }

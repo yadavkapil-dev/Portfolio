@@ -66,8 +66,8 @@ Highlighted Projects:
    - GitHub: https://github.com/yadavkapil-dev/Wanderlust
 
 5) Portfolio Website
-   - Built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, and MDX
-   - Includes project case studies, technical blogs, resume access, contact functionality, and an AI portfolio assistant
+   - Built with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion
+   - Includes project case studies, resume access, contact functionality, and an AI portfolio assistant
    - Live: https://kapilyadav.dev
 `,
 
