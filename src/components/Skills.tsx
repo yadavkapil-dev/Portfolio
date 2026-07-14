@@ -66,7 +66,6 @@ const skillGroups = [
       "Git",
       "GitHub",
       "Jest",
-      "Agile/Scrum",
     ],
   },
 ];
@@ -75,7 +74,7 @@ export default function Skills() {
   return (
     <section id="skills" className="w-full bg-bg-alt">
       <div className={`max-w-6xl mx-auto ${sectionPadding} text-fg text-center`}>
-        <SectionHeading title="Skills & Technologies" />
+        <SectionHeading title="Skills" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {skillGroups.map((group, groupIndex) => (
@@ -88,13 +87,13 @@ export default function Skills() {
                 delay: groupIndex * 0.07,
               }}
               viewport={{ once: true }}
-              className={`${cardSurface} p-6 text-left hover:border-accent/30 transition-colors duration-300`}
+              className={`${cardSurface} p-6 text-center hover:border-accent/30 transition-colors duration-300`}
             >
               <h3 className="text-sm font-semibold uppercase tracking-wider text-fg-secondary mb-5">
                 {group.title}
               </h3>
 
-              <div className="flex flex-wrap gap-2.5">
+              <div className="flex flex-wrap justify-center gap-2.5">
                 {group.skills.map((skill, skillIndex) => (
                   <motion.span
                     key={skill}

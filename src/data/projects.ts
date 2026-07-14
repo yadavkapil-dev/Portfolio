@@ -81,67 +81,6 @@ Built to improve request visibility, reduce manual email handling, and create a 
   },
 
   {
-    id: "wanderlust",
-    title: "Wanderlust | Accommodation Listings \& Reviews Platform",
-    image: "/projects/Wanderlust.png",
-    description:
-      "A full-stack accommodation booking platform with authentication, listing management, image uploads, reviews, and booking workflows.",
-    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Cloudinary"],
-    live: "https://wanderlust-zba2.onrender.com/listings",
-    github: "https://github.com/yadavkapil-dev/Wanderlust",
-    details: `
-Wanderlust is a full-stack accommodation booking platform inspired by modern travel marketplace applications.
-
-✦ Key Features:
-- User authentication and session-based access
-- Listing creation, editing, and deletion
-- Booking and review workflows
-- Cloudinary image upload and storage
-- MVC backend architecture using Express and MongoDB
-- Server-rendered pages using EJS
-
-✦ Purpose:
-Built to implement a complete accommodation booking workflow using backend routing, authentication, database modelling, image uploads, and server-rendered UI.
-    `,
-  },
-
-  {
-    id: "tradetrack",
-    title: "TradeTrack | Trading Dashboard",
-    image: "/projects/TradeTrack.png",
-    description:
-      "A full-stack trading dashboard for managing holdings, positions, simulated orders, and portfolio analytics.",
-    tech: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Chart.js",
-      "Material UI",
-    ],
-    live: "https://trade-track-front.vercel.app",
-    github: "https://github.com/yadavkapil-dev/TradeTrack",
-    details: `
-TradeTrack is a full-stack trading dashboard that simulates portfolio management, holdings, positions, orders, and market analytics using a modern React interface.
-
-✦ Key Features:
-- Authentication with simulated user accounts
-- Dashboard views for holdings, positions, and orders
-- Interactive financial charts using Chart.js
-- Simulated order placement and portfolio workflows
-- Responsive UI for desktop and mobile devices
-
-✦ Architecture:
-- React frontend with reusable dashboard components
-- Express backend with REST API routes
-- MongoDB data models for portfolio and trading workflows
-
-✦ Purpose:
-Built to explore dashboard architecture, authentication, REST APIs, and data visualisation in a modern full-stack application.
-    `,
-  },
-
-  {
     id: "meetify",
     title: "Meetify | Real-Time Video Meeting Platform",
     image: "/projects/Meetify.png",
@@ -177,6 +116,33 @@ Meetify is a full-stack real-time video meeting application built to support bro
 
 ✦ Purpose:
 Built to implement real-time communication using WebRTC, Socket.IO, authentication, and backend services.
+    `,
+  },
+
+  {
+    id: "wanderlust",
+    title: "Wanderlust | Accommodation Listings \& Reviews Platform",
+    image: "/projects/Wanderlust.png",
+    description:
+      "A full-stack accommodation listings and reviews platform with authentication, authorization, image uploads, interactive maps, and review management.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Passport.js", "Joi", "Mapbox", "Cloudinary"],
+    live: "https://wanderlust-zba2.onrender.com/listings",
+    github: "https://github.com/yadavkapil-dev/Wanderlust",
+    details: `
+Wanderlust is a full-stack accommodation listings and reviews platform inspired by modern travel marketplace applications.
+
+✦ Key Features:
+- User authentication and authorization with Passport.js
+- Listing creation, editing, and deletion
+- Review creation and management
+- Interactive maps for listings using Mapbox
+- Cloudinary image upload and storage
+- Server-side validation using Joi
+- MVC backend architecture using Express and MongoDB
+- Server-rendered pages using EJS
+
+✦ Purpose:
+Built to implement a complete accommodation listings and reviews platform using backend routing, authentication, authorization, database modelling, image uploads, interactive maps, and server-rendered UI.
     `,
   },
 ];

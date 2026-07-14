@@ -84,7 +84,7 @@ Key facts:
     return NextResponse.json({
       reply: completion.choices?.[0]?.message?.content || "Sorry — I couldn’t generate a response.",
     });
-  } catch (err) {
+  } catch {
     return NextResponse.json(
       { reply: "Sorry, I’m currently unavailable. Please try again later." },
       { status: 500 }

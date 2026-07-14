@@ -31,7 +31,7 @@ export default function Education() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.45, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`${cardSurface} p-6 md:p-8 text-left hover:border-accent/30 transition-colors duration-300`}
+              className={`${cardSurface} p-6 md:p-8 text-center hover:border-accent/30 transition-colors duration-300`}
             >
               <h3 className="text-lg md:text-2xl font-semibold text-fg">
                 {edu.title}

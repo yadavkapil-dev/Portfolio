@@ -24,20 +24,21 @@ export default function About() {
             building practical, reliable software that solves real business
             problems. My experience spans{" "}
             <span className="text-accent font-semibold">
-              JavaScript, TypeScript, MERN, Next.js, and PHP
+              Java, JavaScript, TypeScript, React, Next.js, Node.js, Express,
+              MongoDB, PHP, and WordPress
             </span>
             , and I enjoy working across the full development lifecycle—from
-            designing intuitive user interfaces to building secure APIs,
-            databases, and deploying applications.
+            developing responsive user interfaces to building secure APIs,
+            designing databases, and deploying applications.
           </p>
 
           <p>
-            I enjoy understanding how businesses operate and using technology
-            to simplify manual processes through well-designed software.
-            I&apos;m always looking to improve as an engineer, learn from
-            experienced teams, and build products that create real value.
-            I&apos;m currently seeking a full-time Software Engineer
-            opportunity and am open to relocation anywhere in Australia.
+            I enjoy understanding how businesses operate and using technology to
+            simplify manual processes through well-designed software. I&apos;m
+            always looking to improve as an engineer, learn from experienced
+            teams, and build products that create real value. I&apos;m currently
+            seeking a full-time Software Engineer opportunity and am open to
+            relocation anywhere in Australia.
           </p>
         </motion.div>
       </div>

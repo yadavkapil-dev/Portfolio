@@ -47,25 +47,19 @@ Highlighted Projects:
    - Demo: https://xflyve.vercel.app
    - GitHub: https://github.com/yadavkapil-dev/XFlyve
 
-2) TradeTrack — Multi-App Trading Dashboard
-   - Built a Zerodha-inspired trading dashboard as separate landing, authenticated dashboard, and Express API applications
-   - Includes Passport.js authentication, holdings, positions, orders, portfolio views, REST APIs, MongoDB, and Chart.js visualisations
-   - Demo: https://trade-track-front.vercel.app
-   - GitHub: https://github.com/yadavkapil-dev/TradeTrack
-
-3) Meetify — Real-Time Video Meeting Platform
+2) Meetify — Real-Time Video Meeting Platform
    - Built a real-time video meeting application using React, Node.js, Express.js, WebRTC, Socket.IO, and MongoDB
    - Features include user authentication, meeting creation, peer-to-peer audio and video, Socket.IO signalling, and meeting history
    - Demo: https://meetify-frontend.onrender.com/
    - GitHub: https://github.com/yadavkapil-dev/Meetify
 
-4) Wanderlust — Accommodation Booking Platform
+3) Wanderlust — Accommodation Booking Platform
    - Built a full-stack accommodation platform using Node.js, Express.js, MongoDB, Mongoose, EJS, Passport.js, Joi, Mapbox, and Cloudinary
    - Features include user authentication, listing management, reviews, image uploads, maps, and MVC architecture
    - Demo: https://wanderlust-zba2.onrender.com/listings
    - GitHub: https://github.com/yadavkapil-dev/Wanderlust
 
-5) Portfolio Website
+4) Portfolio Website
    - Built with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion
    - Includes project case studies, resume access, contact functionality, and an AI portfolio assistant
    - Live: https://kapilyadav.dev

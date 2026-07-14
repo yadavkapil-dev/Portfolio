@@ -1,17 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
-import toast from "react-hot-toast";
 import SectionHeading from "./ui/SectionHeading";
 import { btnPrimary, btnSecondary, sectionPadding } from "../lib/ui";
 
 export default function Contact() {
-  const copyEmail = () => {
-    navigator.clipboard.writeText("ykapil086@gmail.com");
-    toast.success("Email copied!");
-    setTimeout(() => {
-      window.location.href = "mailto:ykapil086@gmail.com";
-    }, 400);
-  };
   return (
     <section id="contact" className="w-full bg-bg">
       <div

@@ -47,17 +47,17 @@ export default function Experience() {
               <div className="absolute -left-[31px] md:-left-[39px] top-6 w-3 h-3 bg-accent rounded-full ring-4 ring-bg" />
 
               <div
-                className={`${cardSurface} p-5 md:p-6 text-left hover:border-accent/30 transition-colors duration-300`}
+                className={`${cardSurface} p-5 md:p-6 text-center hover:border-accent/30 transition-colors duration-300`}
               >
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-2 justify-between">
-                  <h3 className="text-base md:text-xl font-semibold text-fg">
-                    {role.title}
-                  </h3>
+                <div className="flex flex-col items-center gap-3">
+  <h3 className="text-lg md:text-xl font-semibold text-fg text-center">
+    {role.title}
+  </h3>
 
-                  <span className="text-xs font-medium text-accent bg-accent-soft border border-accent/20 rounded-full px-3 py-1 whitespace-nowrap">
-                    {role.date}
-                  </span>
-                </div>
+  <span className="text-xs font-medium text-accent bg-accent-soft border border-accent/20 rounded-full px-3 py-1 whitespace-nowrap">
+    {role.date}
+  </span>
+</div>
 
                 <p className="text-fg-muted text-xs md:text-sm mt-1">
                   {role.location}

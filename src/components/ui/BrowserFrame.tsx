@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 function hostnameOf(url?: string) {
   if (!url) return null;
   try {
@@ -42,13 +44,15 @@ export default function BrowserFrame({
       </div>
 
       {/* Screenshot */}
-      <div className="aspect-[16/10] w-full bg-surface">
+      <div className="relative aspect-[16/10] w-full bg-surface">
         {src ? (
-          <img
+          <Image
             src={src}
             alt={alt}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
             loading="lazy"
-            className="h-full w-full object-cover object-top"
+            className="object-cover object-top"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">

@@ -1,8 +1,15 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 
-export default function Modal({ open, onClose, title, children }: any) {
+type ModalProps = {
+  open: boolean;
+  onClose: () => void;
+  title: string;
+  children: ReactNode;
+};
+
+export default function Modal({ open, onClose, title, children }: ModalProps) {
   
   // Close modal on ESC key
   useEffect(() => {
