@@ -4,7 +4,7 @@ export const projects = [
   title: "XFlyve Logistics Platform",
   image: "/projects/xflyve.png",
   description:
-    "Role-based fleet management platform with JWT authentication and server-enforced ownership checks across admin and driver portals. MongoDB schemas with a job lifecycle state machine and automatic truck-status synchronisation. 500+ automated tests (Jest, Playwright), GitHub Actions CI/CD gating Docker builds, containerised deployment, and a role-gated AI assistant.",
+    "Role-based fleet management platform with JWT authentication and server-enforced ownership checks across admin and driver portals. MongoDB schemas with a job lifecycle state machine and automatic truck-status synchronisation. 514 backend, 176 frontend, and 5 end-to-end tests (Jest, Playwright), GitHub Actions CI/CD gating Docker builds, containerised deployment, and a role-gated AI assistant.",
 
   tech: [
     "React",

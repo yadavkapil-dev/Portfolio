@@ -37,7 +37,7 @@ Highlighted Projects:
 1) XFlyve — Fleet Management Platform (MERN)
    - Role-based fleet management platform with JWT authentication and server-enforced ownership checks across admin and driver portals
    - MongoDB schemas with a job lifecycle state machine and automatic truck-status synchronisation
-   - 500+ automated tests (Jest, Playwright), GitHub Actions CI/CD gating Docker builds, and containerised deployment
+   - 514 backend, 176 frontend, and 5 end-to-end tests (Jest, Playwright), GitHub Actions CI/CD gating Docker builds, and containerised deployment
    - Includes a role-gated AI assistant
    - Demo: https://xflyve.vercel.app
    - GitHub: https://github.com/yadavkapil-dev/XFlyve
