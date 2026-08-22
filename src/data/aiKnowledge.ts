@@ -42,20 +42,28 @@ Highlighted Projects:
    - Demo: https://xflyve.vercel.app
    - GitHub: https://github.com/yadavkapil-dev/XFlyve
 
-2) Meetify — Real-Time Video Meeting Platform
+2) Community Voice — WordPress Plugin (Softlabs Internship)
+   - Custom WordPress plugin built during my internship at Softlabs, replacing manual email-based submissions with a structured request tracking workflow
+   - Public request form with anonymous or identified submission, file uploads, and an AI-powered chatbot integrated into the site to assist visitors and handle pre-qualifying questions
+   - Admin dashboard for status tracking, reference IDs, and email notifications
+   - Built with PHP, WordPress Plugin APIs, and MySQL
+   - Live: https://sreenipillamarri.com.au/
+   - No public source code — the code belongs to Softlabs
+
+3) Meetify — Real-Time Video Meeting Platform
    - Real-time video meeting application using WebRTC for peer-to-peer audio/video and Socket.IO for signalling
    - Session-based authentication, meeting history, and REST APIs built with Node.js, Express, and MongoDB
    - Demo: https://meetify-frontend.onrender.com/
    - GitHub: https://github.com/yadavkapil-dev/Meetify
 
-3) Wanderlust — Accommodation Listings & Reviews Platform
+4) Wanderlust — Accommodation Listings & Reviews Platform
    - Server-rendered accommodation listings and reviews platform built with Node.js, Express, EJS, and MongoDB
    - Session-based authentication and server-side ownership checks
    - Cloudinary for image uploads, Mapbox for geocoding, and Joi for request validation
    - Demo: https://wanderlust-zba2.onrender.com/listings
    - GitHub: https://github.com/yadavkapil-dev/Wanderlust
 
-4) Portfolio Website
+5) Portfolio Website
    - Built with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion
    - Includes project case studies, resume access, contact functionality, and an AI portfolio assistant
    - Live: https://kapilyadav.dev
@@ -70,6 +78,7 @@ Experience:
   - Developed custom WordPress plugins using PHP, MySQL, and WordPress APIs
   - Worked on a structured request-management system that replaced manual email-based workflows
   - Built admin dashboard functionality, public-facing forms, file uploads, request tracking, validation, and automated email notifications
+  - Integrated an AI-powered chatbot into the site to assist visitors and handle pre-qualifying questions
   - Designed custom MySQL tables for storing submissions, statuses, and reference identifiers
   - Contributed to feature implementation, debugging, testing, and iterative delivery in an Agile environment
 

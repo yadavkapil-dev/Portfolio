@@ -64,8 +64,8 @@ The platform replaced fragmented manual workflows with a structured web applicat
     title: "Community Voice | WordPress Plugin",
     image: "/projects/Wordpress.png",
     description:
-      "A custom WordPress plugin built during my internship to replace manual email-based submissions with a structured request tracking workflow.",
-    tech: ["PHP", "WordPress APIs", "MySQL", "File Uploads", "Email Notifications"],
+      "A custom WordPress plugin built during my internship to replace manual email-based submissions with a structured request tracking workflow, including an AI-powered chatbot integrated into the site to assist visitors and handle pre-qualifying questions.",
+    tech: ["PHP", "WordPress Plugin APIs", "MySQL"],
     live: "https://sreenipillamarri.com.au/",
     details: `
 Community Voice is a custom WordPress plugin built during my internship at Softlabs to replace email-only submissions with a structured workflow inside WordPress.
@@ -73,6 +73,7 @@ Community Voice is a custom WordPress plugin built during my internship at Softl
 ✦ Key Features:
 - Frontend request form with optional anonymous submission
 - File upload support and structured request storage
+- AI-powered chatbot integrated into the site to assist visitors and handle pre-qualifying questions
 - Admin dashboard for request tracking and status management
 - Email notifications for admins and users
 - Reference ID generation for submitted requests

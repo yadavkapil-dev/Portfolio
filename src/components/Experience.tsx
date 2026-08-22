@@ -10,7 +10,7 @@ const roles = [
     date: "Nov 2025 — Jan 2026",
     location: "Sydney, Australia",
     description:
-      "Developed custom WordPress plugins using PHP, MySQL, and WordPress APIs to automate manual workflows. Built admin dashboard features, file uploads, automated notifications, request tracking, and server-side validation while collaborating in an Agile development environment.",
+      "Developed custom WordPress plugins using PHP, MySQL, and WordPress APIs to automate manual workflows. Built admin dashboard features, file uploads, automated notifications, request tracking, server-side validation, and an AI-powered chatbot to assist visitors and handle pre-qualifying questions, while collaborating in an Agile development environment.",
   },
   {
     title: "XFlyve Logistics — Fleet Operations (Part-time)",
