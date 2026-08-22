@@ -27,35 +27,31 @@ Cloud and DevOps:
 • Vercel, Render
 
 Tools and Practices:
-• Git, GitHub, Postman, Jest, MySQL Workbench
+• Git, GitHub, Postman, Jest, Playwright, MySQL Workbench
 • Agile and Scrum
-
-AI-Assisted Development:
-• OpenAI API, ChatGPT, Claude, GitHub Copilot, Cursor
 `,
 
   projects: `
 Highlighted Projects:
 
-1) XFlyve Logistics Automation Platform
-   - Independently designed and built a logistics workflow platform after identifying repetitive manual processes while working in fleet operations
-   - Built with React, Node.js, Express.js, MongoDB, JWT, Cloudinary, Docker, Vercel, and Render
-   - Replaced spreadsheet, phone-call, paperwork, and WhatsApp-based coordination with structured admin and driver workflows
-   - Features include job management, driver and truck management, job-status workflows, POD uploads and approvals, work diaries, daily work records, role-based access, reporting, and invoice-readiness rules
-   - Local jobs require an approved Proof of Delivery before invoice readiness
-   - Interstate jobs require both an approved Proof of Delivery and an approved compliance diary
+1) XFlyve — Fleet Management Platform (MERN)
+   - Role-based fleet management platform with JWT authentication and server-enforced ownership checks across admin and driver portals
+   - MongoDB schemas with a job lifecycle state machine and automatic truck-status synchronisation
+   - 500+ automated tests (Jest, Playwright), GitHub Actions CI/CD gating Docker builds, and containerised deployment
+   - Includes a role-gated AI assistant
    - Demo: https://xflyve.vercel.app
    - GitHub: https://github.com/yadavkapil-dev/XFlyve
 
 2) Meetify — Real-Time Video Meeting Platform
-   - Built a real-time video meeting application using React, Node.js, Express.js, WebRTC, Socket.IO, and MongoDB
-   - Features include user authentication, meeting creation, peer-to-peer audio and video, Socket.IO signalling, and meeting history
+   - Real-time video meeting application using WebRTC for peer-to-peer audio/video and Socket.IO for signalling
+   - Session-based authentication, meeting history, and REST APIs built with Node.js, Express, and MongoDB
    - Demo: https://meetify-frontend.onrender.com/
    - GitHub: https://github.com/yadavkapil-dev/Meetify
 
-3) Wanderlust — Accommodation Booking Platform
-   - Built a full-stack accommodation platform using Node.js, Express.js, MongoDB, Mongoose, EJS, Passport.js, Joi, Mapbox, and Cloudinary
-   - Features include user authentication, listing management, reviews, image uploads, maps, and MVC architecture
+3) Wanderlust — Accommodation Listings & Reviews Platform
+   - Server-rendered accommodation listings and reviews platform built with Node.js, Express, EJS, and MongoDB
+   - Session-based authentication and server-side ownership checks
+   - Cloudinary for image uploads, Mapbox for geocoding, and Joi for request validation
    - Demo: https://wanderlust-zba2.onrender.com/listings
    - GitHub: https://github.com/yadavkapil-dev/Wanderlust
 

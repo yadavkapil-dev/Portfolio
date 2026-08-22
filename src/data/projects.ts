@@ -4,7 +4,7 @@ export const projects = [
   title: "XFlyve Logistics Platform",
   image: "/projects/xflyve.png",
   description:
-    "A full-stack logistics platform built after identifying manual operational workflows in a transport company. It digitises job management, Proof of Delivery, work diaries, invoicing workflows, and driver operations using a role-based system.",
+    "Role-based fleet management platform with JWT authentication and server-enforced ownership checks across admin and driver portals. MongoDB schemas with a job lifecycle state machine and automatic truck-status synchronisation. 500+ automated tests (Jest, Playwright), GitHub Actions CI/CD gating Docker builds, containerised deployment, and a role-gated AI assistant.",
 
   tech: [
     "React",
@@ -15,6 +15,8 @@ export const projects = [
     "Cloudinary",
     "Docker",
     "GitHub Actions",
+    "Jest",
+    "Playwright",
     "Vercel",
     "Render",
   ],
@@ -85,7 +87,7 @@ Built to improve request visibility, reduce manual email handling, and create a 
     title: "Meetify | Real-Time Video Meeting Platform",
     image: "/projects/Meetify.png",
     description:
-      "A real-time video meeting platform built using WebRTC, Socket.IO, React, Node.js, Express, and MongoDB.",
+      "Real-time video meeting application using WebRTC for peer-to-peer audio/video and Socket.IO for signalling. Session-based authentication, meeting history, and REST APIs built with Node.js, Express, and MongoDB.",
     tech: [
       "React",
       "Vite",
@@ -124,7 +126,7 @@ Built to implement real-time communication using WebRTC, Socket.IO, authenticati
     title: "Wanderlust | Accommodation Listings \& Reviews Platform",
     image: "/projects/Wanderlust.png",
     description:
-      "A full-stack accommodation listings and reviews platform with authentication, authorization, image uploads, interactive maps, and review management.",
+      "Server-rendered accommodation listings and reviews platform built with Node.js, Express, EJS, and MongoDB, with session-based authentication and server-side ownership checks. Cloudinary for image uploads, Mapbox for geocoding, and Joi for request validation.",
     tech: ["Node.js", "Express", "MongoDB", "Mongoose", "EJS", "Passport.js", "Joi", "Mapbox", "Cloudinary"],
     live: "https://wanderlust-zba2.onrender.com/listings",
     github: "https://github.com/yadavkapil-dev/Wanderlust",

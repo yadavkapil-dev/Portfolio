@@ -23,7 +23,7 @@ export default function Hero() {
 
     const link = document.createElement("a");
     link.href = resumePath;
-    link.download = "Resume_Kapil_Yadav_FullStack_Engineer.pdf";
+    link.download = "Resume_Kapil_Yadav_Fullstack_Engineer.pdf";
 
     document.body.appendChild(link);
     link.click();
@@ -92,7 +92,7 @@ export default function Hero() {
         </button>
 
         <a
-          href="/projects/Kapil_Yadav_Fullstack_Engineer.pdf"
+          href={resumePath}
           onClick={handleDownload}
           className={`${btnSecondary} w-full sm:w-48 cursor-pointer`}
         >

@@ -20,25 +20,13 @@ export default function About() {
           className="space-y-6 text-sm md:text-base text-fg-secondary leading-relaxed md:leading-loose"
         >
           <p>
-            I&apos;m a Sydney-based Full-Stack Software Engineer who enjoys
-            building practical, reliable software that solves real business
-            problems. My experience spans{" "}
+            I&apos;m a Sydney-based Full-Stack Software Engineer with a Master
+            of Information Technology, building with{" "}
             <span className="text-accent font-semibold">
-              Java, JavaScript, TypeScript, React, Next.js, Node.js, Express,
-              MongoDB, PHP, and WordPress
-            </span>
-            , and I enjoy working across the full development lifecycle—from
-            developing responsive user interfaces to building secure APIs,
-            designing databases, and deploying applications.
-          </p>
-
-          <p>
-            I enjoy understanding how businesses operate and using technology to
-            simplify manual processes through well-designed software. I&apos;m
-            always looking to improve as an engineer, learn from experienced
-            teams, and build products that create real value. I&apos;m currently
-            seeking a full-time Software Engineer opportunity and am open to
-            relocation anywhere in Australia.
+              React, Next.js, Node.js, Express, and MongoDB (MERN)
+            </span>{" "}
+            across the full development lifecycle—from requirements and
+            database design through automated testing and cloud deployment.
           </p>
         </motion.div>
       </div>

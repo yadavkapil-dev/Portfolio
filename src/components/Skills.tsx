@@ -66,6 +66,7 @@ const skillGroups = [
       "Git",
       "GitHub",
       "Jest",
+      "Playwright",
     ],
   },
 ];
