@@ -1,11 +1,9 @@
 // src/app/api/chat/route.ts
-import OpenAI from "openai";
 import { NextResponse } from "next/server";
 import { aiKnowledge } from "@/data/aiKnowledge";
 
-const client = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY!,
-});
+const FALLBACK_REPLY =
+  "I don't have a canned answer for that one — email me at ykapil086@gmail.com or connect on LinkedIn (linkedin.com/in/yadav-kapil) and I'll get back to you directly.";
 
 // Simple keyword router (fast + cheap)
 function getLocalAnswer(message: string) {
@@ -47,46 +45,13 @@ export async function POST(req: Request) {
       );
     }
 
-    // 1) Local answer first (FREE)
+    // Local answer if the keyword router matches; otherwise a fixed reply
+    // pointing to direct contact — no external AI call.
     const localAnswer = getLocalAnswer(message);
-    if (localAnswer) {
-      return NextResponse.json({ reply: localAnswer });
-    }
-
-    // 2) Fallback to AI (RARE)
-    const completion = await client.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        {
-          role: "system",
-          content: `
-You are Kapil Yadav’s portfolio assistant.
-
-Goals:
-- Answer like a helpful recruiter-facing assistant: concise, confident, factual.
-- Use only information provided in this chat context about Kapil.
-- If something is unknown, say so and suggest checking the portfolio.
-- Prefer bullet points for clarity.
-- Avoid exaggeration.
-
-Key facts:
-- Based in Sydney, open to full-time.
-- Built XFlyve logistics automation platform reducing manual workload ~70%.
-- Softlabs internship: built "Community Voice" WordPress plugin + integrated FastBots chatbot.
-- Stack: React/Next/TS/Node/Express/Mongo, WordPress plugins (PHP), Docker, GitHub Actions, CI/CD.
-          `.trim(),
-        },
-        { role: "user", content: message },
-      ],
-      temperature: 0.3,
-    });
-
-    return NextResponse.json({
-      reply: completion.choices?.[0]?.message?.content || "Sorry — I couldn’t generate a response.",
-    });
+    return NextResponse.json({ reply: localAnswer || FALLBACK_REPLY });
   } catch {
     return NextResponse.json(
-      { reply: "Sorry, I’m currently unavailable. Please try again later." },
+      { reply: "Sorry, I'm currently unavailable. Please try again later." },
       { status: 500 }
     );
   }

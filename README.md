@@ -7,7 +7,7 @@ https://kapilyadav.dev
 
 ## Overview
 
-One scrolling page — hero, about, skills, projects, experience, education, contact — plus a small AI chat widget that answers common recruiter questions from a local knowledge base, falling back to an OpenAI call for anything else.
+One scrolling page — hero, about, skills, projects, experience, education, contact — plus a small chat widget that answers common recruiter questions from a local knowledge base. It originally fell back to an OpenAI call for anything the keyword router didn't match; that fallback was removed since the per-call cost wasn't justified for a portfolio widget, so unmatched questions now get a fixed reply pointing to my contact details instead.
 
 ## Tech Stack
 
@@ -15,7 +15,6 @@ One scrolling page — hero, about, skills, projects, experience, education, con
 - **TypeScript**
 - **Tailwind CSS v4** — palette defined as CSS variables in `global.css`
 - **Framer Motion** — scroll-triggered fade-ins
-- **OpenAI API** (`gpt-4o-mini`) — fallback for the chat widget
 - **Vercel** — hosting, analytics
 
 ## Project Structure
@@ -40,7 +39,7 @@ npm install
 npm run dev
 ```
 
-Requires an `OPENAI_API_KEY` in `.env.local` for the chat widget's fallback to work; the widget still answers common questions without it, since those are served locally first.
+No environment variables are required — the chat widget runs entirely on the local keyword-matched knowledge base.
 
 ## Contact
 
