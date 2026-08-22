@@ -34,8 +34,8 @@ Content (project descriptions, skills, experience) lives as typed TypeScript dat
 ## Running Locally
 
 ```bash
-git clone https://github.com/Noobod/portfolio
-cd portfolio
+git clone https://github.com/yadavkapil-dev/Portfolio
+cd Portfolio
 npm install
 npm run dev
 ```
