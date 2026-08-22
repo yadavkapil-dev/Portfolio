@@ -20,13 +20,14 @@ export default function About() {
           className="space-y-6 text-sm md:text-base text-fg-secondary leading-relaxed md:leading-loose"
         >
           <p>
-            I&apos;m a Sydney-based Full-Stack Software Engineer with a Master
-            of Information Technology, building with{" "}
+            Full-Stack Software Engineer based in Sydney, with a Master of IT.
+            I build{" "}
             <span className="text-accent font-semibold">
-              React, Next.js, Node.js, Express, and MongoDB (MERN)
+              MERN applications
             </span>{" "}
-            across the full development lifecycle—from requirements and
-            database design through automated testing and cloud deployment.
+            end to end — from the database schema to the tests to the server
+            it runs on. XFlyve exists because I was running fleet jobs through
+            spreadsheets and WhatsApp, so I replaced that with software.
           </p>
         </motion.div>
       </div>
