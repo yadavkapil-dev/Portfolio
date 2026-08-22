@@ -74,10 +74,10 @@ export default function Hero() {
       </p>
 
       <p
-        className="mt-3 max-w-xl text-sm md:text-base text-fg-muted italic opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
+        className="mt-3 max-w-2xl text-sm md:text-base text-fg-muted italic opacity-0 animate-[fadeInUp_0.8s_ease-out_forwards]"
         style={{ animationDelay: "0.4s" }}
       >
-        Full Work Rights in Australia
+        Temporary Graduate Visa (Subclass 485) — Unrestricted Work Rights until April 2029
       </p>
 
       <div
