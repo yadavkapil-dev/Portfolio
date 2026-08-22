@@ -14,6 +14,11 @@ const education = [
     title: "Bachelor of Technology ",
     school: "Jodhpur National University, India, June 2019",
     details: "Studied core computer science subjects including Data Structures, Algorithms, DBMS, Operating Systems, and Software Engineering."
+  },
+  {
+    title: "SigmaX — Full-Stack and AI Engineering Program",
+    school: "Aug 2026 – Present",
+    details: "Data structures and algorithms, MERN development, system design, and AI application development (LangChain, RAG, agents)."
   }
 ];
 
