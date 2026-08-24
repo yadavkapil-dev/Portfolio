@@ -115,7 +115,7 @@ Education:
   Jodhpur National University, India
   Completed 2019
 
-• SigmaX — Full-Stack and AI Engineering Program
+• SigmaX — AI-Powered Software Engineer Program
   Data structures and algorithms, MERN development, system design, and AI application development (LangChain, RAG, agents)
   Aug 2026 – Present
 `,
