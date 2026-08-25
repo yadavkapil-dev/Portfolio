@@ -64,7 +64,7 @@ The platform replaced fragmented manual workflows with a structured web applicat
     title: "Community Voice | WordPress Plugin",
     image: "/projects/Wordpress.png",
     description:
-      "A custom WordPress plugin built during my internship to replace manual email-based submissions with a structured request tracking workflow, including an AI-powered chatbot integrated into the site to assist visitors and handle pre-qualifying questions.",
+      "A custom WordPress plugin built during my internship to replace manual email-based submissions with a structured request tracking workflow. Also built and tested an AI chatbot integration on a staging environment to assist visitors and handle pre-qualifying questions.",
     tech: ["PHP", "WordPress Plugin APIs", "MySQL"],
     live: "https://sreenipillamarri.com.au/",
     details: `
@@ -73,10 +73,18 @@ Community Voice is a custom WordPress plugin built during my internship at Softl
 ✦ Key Features:
 - Frontend request form with optional anonymous submission
 - File upload support and structured request storage
-- AI-powered chatbot integrated into the site to assist visitors and handle pre-qualifying questions
 - Admin dashboard for request tracking and status management
 - Email notifications for admins and users
 - Reference ID generation for submitted requests
+- Also built and tested an AI chatbot integration on a staging environment to assist visitors and handle pre-qualifying questions
+
+✦ Security:
+- WordPress nonces on form submission
+- Server-side input sanitisation
+- Prevention of direct file access
+
+✦ Technical Constraints:
+The site had no Elementor Pro licence, so custom page templates and a header.php approach weren't available. I implemented the functionality through functions.php and WordPress hooks instead, loading scripts conditionally rather than depending on paid features.
 
 ✦ Purpose:
 Built to improve request visibility, reduce manual email handling, and create a more reliable tracking process for community submissions.

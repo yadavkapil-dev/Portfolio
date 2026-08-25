@@ -44,9 +44,12 @@ Highlighted Projects:
 
 2) Community Voice — WordPress Plugin (Softlabs Internship)
    - Custom WordPress plugin built during my internship at Softlabs, replacing manual email-based submissions with a structured request tracking workflow
-   - Public request form with anonymous or identified submission, file uploads, and an AI-powered chatbot integrated into the site to assist visitors and handle pre-qualifying questions
+   - Public request form with anonymous or identified submission and file uploads
    - Admin dashboard for status tracking, reference IDs, and email notifications
+   - Security: WordPress nonces on form submission, server-side input sanitisation, and prevention of direct file access
+   - No Elementor Pro licence on the site, so functionality was implemented through functions.php and WordPress hooks instead of custom page templates, loading scripts conditionally rather than depending on paid features
    - Built with PHP, WordPress Plugin APIs, and MySQL
+   - Also built and tested an AI chatbot integration on a staging environment to assist visitors and handle pre-qualifying questions
    - Live: https://sreenipillamarri.com.au/
    - No public source code — the code belongs to Softlabs
 
@@ -78,8 +81,8 @@ Experience:
   - Developed custom WordPress plugins using PHP, MySQL, and WordPress APIs
   - Worked on a structured request-management system that replaced manual email-based workflows
   - Built admin dashboard functionality, public-facing forms, file uploads, request tracking, validation, and automated email notifications
-  - Integrated an AI-powered chatbot into the site to assist visitors and handle pre-qualifying questions
-  - Designed custom MySQL tables for storing submissions, statuses, and reference identifiers
+  - Also built and tested an AI chatbot integration on a staging environment to assist visitors and handle pre-qualifying questions
+  - Structured request storage for submissions, statuses, and reference identifiers
   - Contributed to feature implementation, debugging, testing, and iterative delivery in an Agile environment
 
 • Fleet Operations (Part-time) — XFlyve Logistics
