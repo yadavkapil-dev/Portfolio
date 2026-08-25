@@ -14,7 +14,6 @@ Frontend:
 Backend:
 • Node.js, Express.js, REST APIs, Socket.IO
 • JWT and Passport.js Authentication
-• OpenAI API Integration
 • WordPress Custom Plugins and WordPress APIs
 
 Databases and Storage:
@@ -68,7 +67,7 @@ Highlighted Projects:
 
 5) Portfolio Website
    - Built with Next.js App Router, TypeScript, Tailwind CSS, and Framer Motion
-   - Includes project case studies, resume access, contact functionality, and an AI portfolio assistant
+   - Includes project case studies, resume access, contact functionality, and a portfolio chat assistant
    - Live: https://kapilyadav.dev
 `,
 
@@ -120,7 +119,7 @@ Education:
 
 • SigmaX — AI-Powered Software Engineer Program
   Apna College
-  Data structures and algorithms, MERN development, system design, and AI application development
+  Currently studying data structures and algorithms, MERN development, system design, and AI application development
   Aug 2026 – Present
 `,
 
