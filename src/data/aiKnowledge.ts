@@ -119,7 +119,8 @@ Education:
   Completed 2019
 
 • SigmaX — AI-Powered Software Engineer Program
-  Data structures and algorithms, MERN development, system design, and AI application development (LangChain, RAG, agents)
+  Apna College
+  Data structures and algorithms, MERN development, system design, and AI application development
   Aug 2026 – Present
 `,
 

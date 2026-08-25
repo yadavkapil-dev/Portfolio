@@ -17,8 +17,8 @@ const education = [
   },
   {
     title: "SigmaX — AI-Powered Software Engineer Program",
-    school: "Aug 2026 – Present",
-    details: "Data structures and algorithms, MERN development, system design, and AI application development (LangChain, RAG, agents)."
+    school: "Apna College · Aug 2026 – Present",
+    details: "Data structures and algorithms, MERN development, system design, and AI application development."
   }
 ];
 
